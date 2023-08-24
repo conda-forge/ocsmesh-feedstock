@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@SorooshMani-NOAA](https://github.com/SorooshMani-NOAA/)
+* [@saeed-moghimi-noaa](https://github.com/saeed-moghimi-noaa/)
 
