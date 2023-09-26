@@ -42,6 +42,8 @@ requirements:
     - shapely
     - typing-extensions
     - utm
+    - pandas
+    - py-triangle
 
 test:
   imports:
