@@ -1,5 +1,5 @@
 {% set name = "ocsmesh" %}
-{% set version = "1.5.4" %}
+{% set version = "1.5.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ocsmesh-{{ version }}.tar.gz
-  sha256: 42f5787f13b7dea7b5f73346ecb1a93eb6f28cbaccbb2fc114aad6bc75fb2e2b
+  sha256: 47db06e492fa942461f65aa3b78cac7829a865b94535715b46133f311ea74c36
 
 build:
   entry_points:
