@@ -28,7 +28,7 @@ requirements:
     - python >=3.9
     - colored-traceback
     - fiona
-    - geopandas<=0.14.4
+    - geopandas <=0.14.4
     - jigsawpy
     - matplotlib-base
     - netcdf4
