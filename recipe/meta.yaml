@@ -14,18 +14,18 @@ build:
     - ocsmesh = ocsmesh.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools >=45
     - setuptools-scm >=7
     - wheel
     - numpy
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - colored-traceback
     - fiona
     - geopandas >=1.0.0
@@ -53,6 +53,7 @@ test:
     - ocsmesh --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/noaa-ocs-modeling/OCSMesh/
