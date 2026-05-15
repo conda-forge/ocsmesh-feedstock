@@ -1,13 +1,13 @@
 {% set name = "ocsmesh" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/ad/88/6439c14cfd34d486848f57899a15c1989fe67d997b497d5ed04832a68027/ocsmesh-{{ version }}.tar.gz
-  sha256: d3538a684767fd1d7d8e54340d62e784014826e5a02b374c323f6cb7017aa75c
+  url: https://files.pythonhosted.org/packages/74/20/8652e8fee5fb7df63a9650c34c679039211c8e6f9c15b1fd8ed39ac65d9a/ocsmesh-{{ version }}.tar.gz
+  sha256: 3173f3f31f43c675bf708d53bfc7bc5a3b45208f81581b93eff399ddb2c0e64f
 
 build:
   entry_points:
