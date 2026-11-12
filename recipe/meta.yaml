@@ -1,13 +1,13 @@
 {% set name = "ocsmesh" %}
-{% set version = "2.2.0" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/2f/bb/a10ce116a012bae3e774700e491a40c3f012372ad74cf873b4badbb14a2e/ocsmesh-{{ version }}.tar.gz
-  sha256: 8ab360470625419d59a3e2e291113c978753ab17284fe1e16dadc79ddf861944
+  url: https://files.pythonhosted.org/packages/da/17/3b6625f5a0e02910fb591243ed4545dfc9079253ff07ad00b2088004b3f4/ocsmesh-{{ version }}.tar.gz
+  sha256: bef6d992d4c573c93eabe0bccd7b95ba7452f39244a21e3b6eeac6cfdf34a143
 
 build:
   entry_points:
@@ -25,25 +25,25 @@ requirements:
     - numpy
     - pip
   run:
-    - python >={{ python_min }}
-    - colored-traceback
+    - python >={{ python_min }},<3.14
+    - colored-traceback <=0.3.0
     - fiona
     - geopandas >=1.0.0
-    - jigsawpy
-    - matplotlib-base
+    - matplotlib-base >=3.8
     - netcdf4
     - numba
     - numpy >=1.21
+    - pandas
     - pyarrow
-    - rtree
     - pyproj >=3.0
+    - py-triangle
+    - python-gmsh
     - rasterio
+    - rtree
     - scipy
-    - shapely
+    - shapely >=2.0
     - typing-extensions
     - utm
-    - pandas
-    - py-triangle
 
 test:
   imports:
