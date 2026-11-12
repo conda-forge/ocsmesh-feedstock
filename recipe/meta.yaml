@@ -25,25 +25,25 @@ requirements:
     - numpy
     - pip
   run:
-    - python >={{ python_min }}
-    - colored-traceback
+    - python >={{ python_min }},<3.14
+    - colored-traceback <=0.3.0
     - fiona
     - geopandas >=1.0.0
-    - jigsawpy
-    - matplotlib-base
+    - matplotlib-base >=3.8
     - netcdf4
     - numba
     - numpy >=1.21
+    - pandas
     - pyarrow
-    - rtree
     - pyproj >=3.0
+    - py-triangle
+    - python-gmsh
     - rasterio
+    - rtree
     - scipy
-    - shapely
+    - shapely >=2.0
     - typing-extensions
     - utm
-    - pandas
-    - py-triangle
 
 test:
   imports:
